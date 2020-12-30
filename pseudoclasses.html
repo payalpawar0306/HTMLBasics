@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+      
+        /* li:first-of-type{color: cyan;} */
+        li:first-child{
+            background-color:grey;
+            }
+        li:last-child{border: 2px dotted salmon;}
+        li:last-of-type{color: seagreen;}
+        /* li:nth-child(2){border: 1px solid green} */
+        li:nth-last-of-type(2){color: slateblue;}
+        li:last-child{border: slateblue 1px dashed;}
+        li:nth-of-type(3){border: deeppink 1px solid;}
+        /* li:first-child{border: green 1px solid;
+        border-radius: 10px;} */
+        p span:only-child{
+            border: rgb(201, 52, 52) 1px solid;}
+
+        a:link{
+                  color: blueviolet;
+              }
+        a:visited{color: brown;}
+        a:hover{color: chartreuse;}
+        a:active{color: cyan;}
+    </style> 
+<body>
+    <a href="http:\\www.google.com\">Click Here</a>
+    <ul>
+        <p>Pawar Payal</p>
+        <li>ABC</li>
+        <p>Pawar Payal</p>
+        <li>XYZ</li>
+        <li>PQR</li>
+        <p>Pawar
+            <span>Prajakta</span>
+        </p>
+        <li>STU</li>
+      
+
+        </ul>
+</body>
+</html>
