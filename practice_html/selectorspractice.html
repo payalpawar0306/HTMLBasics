@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            header>p{color:blueviolet;}
+            header.head1>p~div{border: rgb(209, 101, 161);}  /*
+             {> means child class
+                ~ means general siblings
+                + means adjucent sibling}*/
+            header >div{
+                background:brown;
+                color: cyan;   }
+            header.head1>h1+p{color:brown}
+            h1~p{background: burlywood;}
+            header~section{background: blue;color:chartreuse; font-weight: bolder;font-size: 200%;}
+        </style>
+    </head>
+    <body>
+        
+        <header class="head1">
+            <h1>Selectors</h1>
+            <p>Selectors are used to select perticular part of web-page and styles it. </p>
+            <div>Selectors are used to select perticular part of web-page and styles it.</div>
+        </header>
+        <section>
+           <p> I m Payal.</p>
+        </section>
+    </body>
+</html>

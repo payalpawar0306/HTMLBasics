@@ -1,0 +1,59 @@
+.heading{
+  
+    text-align: center;
+    background: violet;
+    width: 100%;
+}
+.footer{
+  background: violet;
+  width: 100%;
+  position: absolute;
+  top : 85%;
+  margin-top : 10px;
+  text-align : center;
+}
+
+.navbar {
+    padding-top:10px;
+   
+    padding-bottom: 10px;
+    height:20px;
+    background:rgb(2, 68, 77);
+    padding-right:10px;
+  }
+ul.navbar>li{
+    display : inline;
+    top:25%;
+    padding-right: 100px;
+ }
+ .navbar > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+.main{
+ 
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+}
+.one{
+    float: left;
+    widows: 80%;;
+    padding:10% ;
+    background-color: plum;
+}
+.two{
+    float: left;
+    width:105%;
+    padding:5% ;
+    background-color:gray
+}
+.three{
+    float: none;
+    width:50%;
+    padding:10px;
+    background-color:powderblue;
+}
+

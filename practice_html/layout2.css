@@ -1,0 +1,58 @@
+.navbar{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    height:20px;
+    background:grey
+}
+
+ul.navbar>li{
+    display:inline;
+    padding: 100px;
+    top: 25%;
+    color: honeydew;
+}
+ul.navbar>li>a{
+    color: lightcyan;
+}
+.table,tr,td,th{
+             
+    border: rgb(162, 162, 192) solid;
+    border-collapse: collapse;
+}
+
+.head{
+    background: indigo;
+    color: khaki;
+    padding:25px;
+    text-align: center;
+}
+.section{
+ color: rgb(156, 20, 40);
+ padding: 10px;
+ width: 91%;
+ font-size: medium;
+ background-color: rgb(105, 141, 182);
+}
+.article{
+    color: rgb(75, 3, 17);
+    padding: 10px;
+    width: 50%;
+    background: limegreen;
+   }
+   .aside{
+    color: rgb(244, 255, 182);
+    width: 20%;
+    padding: 10px;
+    background: rgb(128, 0, 96);
+   }
+   .main{
+       display: flex;
+
+   }
+   .footer{
+       padding: 10px;
+       top: 90%;
+       text-align: center;
+       background: cornflowerblue;
+   }
