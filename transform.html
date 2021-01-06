@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transform</title>
     <style>
-       .container{padding: 40px;
-            width: 60%;
+       .container{
+            padding: 40px;
+            width: 50%;
             margin: 20px;
             display: grid;
             grid-template-columns: 50% 50% 50%;
            
             }
-        img{
-            height: 200px;weight:200px;margin: 10px;
-            }
+            img{width:80%;height: 150%;margin-left: 10px;}
+       
         .one{
             background-color: blueviolet;color: cornsilk;
             width: 60%;height: 80%;
@@ -28,7 +28,7 @@
             background-color: blue;color: cornsilk;
             width: 60%;height: 80%;
             margin: 40px;padding: 10px;
-            transition: transform 0s ease 0s;
+            transition: transform 0s linear 0s;
         }
         .three{
             background-color: rgb(110, 36, 92);color: cornsilk;
@@ -36,14 +36,20 @@
             margin: 40px;padding: 10px;
             transition: transform 0s ease-in 0s;
         }
-        .four{transition: transform 1s ease 0s;margin: 20px;}
-        .five{transition: transform 1s ease 0s;margin: 20px;}
-        .six{transition: transform 1s ease 0s;margin: 20px;}
+        .four{
+          
+            transition: transform 1s ease 0s;margin: 20px;}
+        .five{
+          
+            transition: transform 1s ease 0s;margin: 20px;}
+        .six{
+         
+            transition: transform 1s ease 0s;margin: 20px;}
 
  
         .four:hover{transform: rotate(360deg);}
         .five:hover{transform: skew(20deg);}
-        .six:hover{transform: translate(20px,20px)}
+        .six:hover{transform: translate(30px,30px)}
     </style>
 </head>
 <body>
