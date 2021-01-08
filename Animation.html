@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            color: brown;
+            animation-name: payal;
+           animation-duration: 3s;
+           animation-iteration-count: 4;
+            text-align: center;
+            padding-top: 10%;
+            animation-timing-function:ease-in;
+            animation-play-state: running;
+            animation-delay: 3s;
+        }
+        .text:hover{
+            animation-play-state: paused;
+        }
+        h1{
+            font-size:100px;
+            font-weight: 600;
+        }
+        @keyframes payal{
+            0%{
+                transform:scale(0.5);
+                opacity: 0;
+            }
+            50%{
+                transform:scale(2);
+               
+          }
+          100%{
+                transform:scale(1.5);
+              
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Welcome</h1>
+    </div>
+</body>
+</html>
