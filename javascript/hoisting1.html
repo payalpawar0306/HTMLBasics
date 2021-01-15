@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+    // y=01
+    //  console.log(y) ---------------(can't access let before initialization)
+    //  let y
+    
+     z=0
+     console.log(z)  //--------------------(can access var before initialization)
+     var z
+
+     
+     console.log(s)
+     var s          //---------------------(undefined)
+     s=3
+    
+
+    //  console.log(t) //----------------------(let can't initialize and no value assigned ,neighter undefined)
+    //  let t=3
+
+    //  u=4            //----------------------(let can't initialize and no value assigned ,neighter undefined)
+    //  console.log(u)
+    //  let u
+
+
+    let display=()=>{
+        a=2
+        b=3
+        addition=a+b
+        document.write(`Addition is ${addition}`)
+    }
+    document.write(display)
+    
+    // document.write(display1)   ----------------(function cant access before initialization)
+    // let display1=()=>{
+    //     a=2
+    //     b=3
+    //     addition=a+b
+    //     document.write(`Addition is ${addition}`)
+    // }
+   
+    </script>
+</body>
+</html>
