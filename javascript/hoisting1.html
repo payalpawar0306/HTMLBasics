@@ -29,14 +29,16 @@
     //  console.log(u)
     //  let u
 
-
+    a=2
+    b=3
     let display=()=>{
-        a=2
-        b=3
+      
         addition=a+b
         document.write(`Addition is ${addition}`)
     }
-    document.write(display)
+ 
+   display()
+   
     
     // document.write(display1)   ----------------(function cant access before initialization)
     // let display1=()=>{
@@ -45,6 +47,17 @@
     //     addition=a+b
     //     document.write(`Addition is ${addition}`)
     // }
+    function payal(){
+        f=1;
+        a=4
+        while(a>0){
+            f=f*a
+            a--
+        }
+        document.write("<br>"+f)
+    }
+    // document.write(f)   -----it will not execuite bcz it is outside the function so it is not accessible out side the function block.
+    payal()
    
     </script>
 </body>
