@@ -7,25 +7,83 @@
 </head>
 <body>
    <script>
+    var a;var b
+   
+
+    let fun1=()=>{
+    for (let a = 1; a <= 4; a++){
+            for(b=1;b<=a;b++){
+                document.write(b+"\n")
+            }
+            document.write("<br>")
+    }
+    }
+
+    fun1()
+    document.write("<br>")
+
+     let fun2=()=>{
+         for(a=4;a>=1;a--){
+             for(b=1;b<=a;b++){
+                 document.write(b+"\n")
+             }
+             document.write("<br>")
+         }
+     }   
+     fun2()
+
+     let fun3=()=>{
+         for (let a = 1; a <= 4; a++){
+            for(b=1;b<=a;b++){
+                document.write("*"+"\n")
+            }
+            document.write("<br>")
+    }
+    }
+    document.write("<br>")
     
+    fun3()
 
-       function pallindrome(){
-         let  a=121
-           var b
-        //    b=123
-           sum1=0
-          
+    let fun4=()=>{
+            var a,b,c;
+            a=0;
+            b=1;
+            c=0;
+            while(a<100){
+                document.write(a +"\n")
+                c=a+b
+                a=b
+                b=c
 
-           while(a!=0){
-            b=a%10
-             sum1=sum1*10+b
-            a=a/10
-           }
-           document.write(sum1)
+            }
+            document.write("<br>")
+    }
+    fun4()
 
-       }
-       
-       pallindrome()
-   </script> 
+    let fun5=()=>{
+        var a,b
+        a=24
+        b=2
+        while(a>1){
+        if(a%b==0){
+            document.write(b+"\n")
+            a=a/b
+        }
+        else
+        b++
+    }}
+    fun5()
+
+    let fun6=()=>{
+        a="payal"
+        var i
+        d=0
+    for
+      }
+
+      document.write(d)
+    }
+    fun6()
+    </script> 
 </body>
 </html>
