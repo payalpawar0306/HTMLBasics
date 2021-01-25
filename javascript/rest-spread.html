@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a,...x){         //----------(...x) this notation denotes rest parameter where a and x are parameters
+            console.log(a)
+
+            total=0
+            for (i of x) {
+                total+=i
+            }
+          
+            console.log(total)
+        }
+       
+        add(4,20,10,4,6)                //----passing arguments to the function
+
+       
+       a=0;                             
+       function sub(x,y,z)
+       {        
+        console.log(z)
+       }
+       let number=[10,20,2,3]
+       sub(a ,...number)                //----this represents spread parameters
+
+       
+       
+
+    </script>
+</body>
+</html>

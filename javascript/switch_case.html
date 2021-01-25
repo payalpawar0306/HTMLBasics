@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="Item"></p>
+
+<script>
+
+  const  Pizza = 100
+  const  Burger =99
+  const Frenchfries = 50
+  const coffee=20
+  const tea=15
+  var item="coffee"
+var total=0;
+
+switch (item) {
+  case "Pizza":
+   total =total+ Pizza;
+    break;
+  case "Burger" :
+  total =total+ Burger;
+    break;
+  case "Frenchfries":
+  total =total+ Frenchfries;
+    break;
+  case "coffee":
+  total =total+ coffee;
+    break;
+  case "tea":
+  total =total+ tea;
+    break;
+}
+console.log(`You ordered ${item}. Total cost :${total}`)
+</script>
+</body>
+</html>

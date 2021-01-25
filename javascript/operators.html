@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        arr=[99, 98, 57 ,94 ,60]
+        arr=[99, 98, 97 ,94 ,60]
         marks=0
         aggregate=0
        for(i=0;i<=4;i++){
@@ -16,17 +16,17 @@
        total_marks=500
        aggregate=(marks/total_marks)*100
         
-       
+
         if(aggregate>=80){
             document.write("Distinction")
         }
-        else if(aggregate>60){
+        else if(aggregate>=60 && aggregate<80){
             document.write("First class")
         }
-        else if(aggregate>45){
+        else if(aggregate>=45 && aggregate<60){
             document.write("Second class")
         }
-        else if(aggregate>35){
+        else if(aggregate>35 && aggregate<45){
             document.write("Pass")
         }
         </script>
