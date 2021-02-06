@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         
+        function fact(a){
+            f=1
+            let p=new Promise(function(resolve,reject){
+                if(a>0){
+                   
+                    while(a>0){
+                    f=f*a
+                    a--}
+                    resolve(f)
+                }else{
+                reject("something is wrong")}
+            }
+            )
+            return p
+        }
+        function display(ans2){
+         
+            document.write(ans2)
+            
+        }
+        async function handleFactorial(){
+            try{
+            let ans1=await fact(0)
+            var ans2=await display(ans1)
+            return ans2
+            }catch(err){
+               document.write(err)
+            }
+        }
+
+        handleFactorial()
+    </script>
+</body>
+</html>

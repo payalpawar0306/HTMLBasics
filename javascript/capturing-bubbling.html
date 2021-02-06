@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#one{background-color: blueviolet;
+                width: 200px;height:200px}
+        div#two{background-color:violet;
+            width: 100px;height:100px}
+
+        p#p1{background-color: blue;
+            width: 20px;height:20px}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="one">
+        <div id="two">
+            <p id="p1"></p>
+        </div>
+    </div>
+    <script>
+        let div1=document.getElementById("one")
+        let div2=document.getElementById("two")
+        let para=document.getElementById("p1")
+
+        div1.addEventListener("click",outerDiv)
+        div2.addEventListener("click",innerDiv)
+        para.addEventListener("click",paragraph1)
+
+
+        // div1.addEventListener("click",outerDiv,true)
+        // div2.addEventListener("click",innerDiv,true)
+        // para.addEventListener("click",paragraph1,true)
+
+        function outerDiv(){
+            console.log("Div1 Called")
+        }
+        function innerDiv(){
+             console.log("Div2 Called")
+        }
+         function paragraph1(){
+           
+            console.log("p1 Called")
+        }
+    </script>
+</body>
+</html>

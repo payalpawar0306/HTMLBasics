@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function subtract(num1,num2,display){
+        //     result=num1-num2
+        //   display(result)
+        // }
+        // subtract(20,20,display)
+
+        // function display(result){
+        //     document.write("Subtraction is the : "+result)
+        // }
+
+        // promises:
+        function add(num1,num2){
+            let  result=num1+num2
+          
+          let p=new Promise(function(resolve,reject){
+           
+            if(result>5){
+                resolve(
+                        result)
+            }else{
+                reject(
+                document.write("Output is lesser than 5<br>")
+                )
+            } 
+         })
+          
+            p.then(
+                function(result){
+                    result=result+100
+                    document.write(result+"<br>")
+                    return result
+             }).then(
+                    function(result){
+                        result=result+50
+                        return result
+               }).then(
+                        function(result){
+                        document.write(result)
+
+                }).catch(
+                    function()
+                    {
+                        document.write("   Error")
+                })
+      
+    }
+        add(10,2)
+        
+
+
+
+    // function add(num1,num2,display){
+    //     result=num1+num2
+         
+    //     display(result)
+    // }
+    // add(10,10,display)
+
+    // function display(result){
+    //     document.write(result)
+    // }
+
+    // function divide(num2,num3,display){
+    //     div=num2/num3
+        
+    //     display(div)
+    // }
+    // divide(20,10,display)
+
+    // function display(div)
+    // {
+    //     document.write("ans is : " +div +"<br>")
+    // }
+
+    function div(num3,num4){
+        ans=num3/num4
+
+    let x=new Promise(function(payal,pawar){
+        if(ans>1){
+            payal(document.write(ans))
+        }else{
+            pawar(document.write(`divided by same no.`))
+        }
+    })
+    x.then(
+        function(){
+            document.write(ans*10)
+        }
+    ).catch(
+        function(){
+            document.write(`so result is 1`)
+        }
+    )}
+    div(30,10)
+</script>
+</body>
+</html>

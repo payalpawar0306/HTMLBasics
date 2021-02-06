@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function multiply(a,b){
+         let  output=a*b
+
+           let promise=new Promise(
+               function(resolve,reject){
+                   if(output>0){
+                       resolve(output)
+                   }else{
+                       reject("please try again")
+                   }
+               }
+           )
+        return promise
+       }
+
+       multiply(10,10).then(
+           function(output){
+               document.write(output)
+           } 
+       ).catch(
+           function(output){
+               document.write(output)
+           }
+       )
+
+   </script> 
+</body>
+</html>
